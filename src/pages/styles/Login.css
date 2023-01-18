@@ -1,0 +1,136 @@
+
+
+.login-wrapper {
+position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-120%, -20%);
+  width: 29%;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: clip;
+  overflow-clip-margin: 50em;
+  z-index: -1;
+  
+  
+}
+
+.login-wrapper::before {
+    content: '';
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    background: linear-gradient(-45deg, #fbc205, #f5c608);
+    top: 100%;
+    right: -120%;
+    transform: translateY(-60%);
+    transition: 10s ease-in-out;
+    overflow: hidden;
+  }
+
+.loginForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50%;
+    z-index: 100;
+  }
+
+  .form span {
+    display: inline-block;
+    margin-left: 0.5rem;
+    position: relative;
+  }
+
+  #formField {
+    box-shadow: inset 0px 0px 5px 0px rgb(199, 196, 196);
+    border: 0;
+    border-radius: 55px;
+   
+  }
+  
+  #formField::placeholder {
+    color: #aaa;
+    font-weight: 500;
+  }
+
+  #formField button {
+    width: 150px;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 49px;
+    cursor: pointer;
+    background-color: #000000;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.3s;
+  }
+
+  #formField button:hover {
+    color: #343434 !important;
+  }
+
+  .panelContainer {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+img {
+    width: 30%;
+    transform: translate(-30%, 3%);
+  }
+  
+  #left-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    text-align: center;
+    pointer-events: all;
+    padding: 1rem 17% 2rem 12%;
+    transform: translate(40%, -80%);
+
+    
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .content a {
+    width: 150px;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 49px;
+    cursor: pointer;
+    background-color: #000000;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.3s;
+    
+    
+  }
+
+  .content a:hover {
+    color: #343434 !important;
+  }
+
+  /* .buttonsignup {
+    display: flex;
+    transform: translate(40%, -70%);
+    align-items: flex-end;
+    justify-content: space-around;
+    text-align: center;
+    pointer-events: all;
+  } */

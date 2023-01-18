@@ -1,0 +1,12 @@
+.header-wrapper {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    right: 0;
+    /* max-width: inherit; */
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(-180deg,#f5b62d,rgb(255, 231, 51));
+    transition: transform .2s;
+    overflow: hidden;
+}
